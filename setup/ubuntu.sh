@@ -22,6 +22,10 @@ if ! command -v starship &>/dev/null; then
   curl -sS https://starship.rs/install.sh | sh -s -- -y
 fi
 
+if ! command -v atuin &>/dev/null; then
+  curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+fi
+
 if grep -qEi "(Microsoft|WSL)" /proc/version >/dev/null 2>&1; then
     export DISPLAY=:0
 fi

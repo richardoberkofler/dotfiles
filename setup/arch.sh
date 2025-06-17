@@ -13,7 +13,7 @@ else
   sudo localectl set-locale LANG=de_AT.UTF-8
 fi
 
-sudo pacman -Syu --noconfirm git zsh tmux curl unzip base-devel fzf eza lazygit starship zoxide neovim htop ripgrep
+sudo pacman -Syu --noconfirm git zsh tmux curl unzip base-devel fzf eza lazygit starship zoxide neovim htop ripgrep atuin
 
 if ! command -v yay &>/dev/null; then
   echo "Installing yay (AUR helper)..."

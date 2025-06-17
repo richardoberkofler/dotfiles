@@ -85,6 +85,11 @@ eval "$(starship init zsh)"
 # --- Zoxide ---
 eval "$(zoxide init zsh --cmd cd)"
 
+# --- Atuin (better shell history) ---
+if command -v atuin &>/dev/null; then
+  eval "$(atuin init zsh)"
+fi
+
 # --- Python venv auto-activation ---
 function auto_venv_activate() {
     if [[ -f .venv/bin/activate ]]; then

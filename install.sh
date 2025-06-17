@@ -44,6 +44,6 @@ source setup/common.sh
 
 echo "[*] Stowing dotfiles ..."
 
-stow */
+stow -R */
 
 echo "[*] Done. Restart your terminal or run: `exec zsh`"
