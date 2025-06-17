@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "[*] Running Arch Linux setup..."
+echo "[*] Running Ubuntu setup..."
 
 if [ -n "${CI:-}" ]; then
   sudo sed -i '/^#en_US.UTF-8 UTF-8/s/^#//' /etc/locale.gen
@@ -13,12 +13,13 @@ else
   sudo localectl set-locale LANG=de_AT.UTF-8
 fi
 
-sudo pacman -Syu --noconfirm git zsh tmux curl unzip base-devel fzf eza lazygit starship zoxide neovim htop ripgrep
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install -y git zsh tmux curl unzip build-essential fzf eza zoxide neovim htop ripgrep neofetch
 
-if ! command -v yay &>/dev/null; then
-  echo "Installing yay (AUR helper)..."
-  git clone https://aur.archlinux.org/yay.git /tmp/yay
-  (cd /tmp/yay && makepkg -si --noconfirm)
+# Install starship
+if ! command -v starship &>/dev/null; then
+  curl -sS https://starship.rs/install.sh | sh -s -- -y
 fi
 
 if grep -qEi "(Microsoft|WSL)" /proc/version >/dev/null 2>&1; then
