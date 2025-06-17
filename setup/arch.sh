@@ -7,13 +7,13 @@ if [ -n "${CI:-}" ]; then
   sudo locale-gen
   echo "CI detected, skipping localectl set-locale."
 else
+  sudo sed -i '/^#en_US.UTF-8 UTF-8/s/^#//' /etc/locale.gen
   sudo sed -i '/^#de_AT.UTF-8 UTF-8/s/^#//' /etc/locale.gen
   sudo locale-gen
   sudo localectl set-locale LANG=de_AT.UTF-8
 fi
 
-sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm git zsh tmux curl unzip base-devel fzf eza lazygit starship zoxide neovim htop ripgrep
+sudo pacman -Syu --noconfirm git zsh tmux curl unzip base-devel fzf eza lazygit starship zoxide neovim htop ripgrep
 
 # Optional: install yay for AUR packages (if not already)
 if ! command -v yay &>/dev/null; then

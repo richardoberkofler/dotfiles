@@ -31,8 +31,6 @@ fi
 
 cd "$DOTFILES_DIR"
 
-source setup/common.sh
-
 # OS-specific setup
 if [ -f /etc/arch-release ]; then
   source setup/arch.sh
@@ -42,8 +40,10 @@ elif [ "$(uname)" == "Darwin" ]; then
   source setup/macos.sh
 fi
 
+source setup/common.sh
+
 echo "[*] Stowing dotfiles ..."
 
 stow */
 
-echo "✅ Done. Restart your terminal or run: `exec zsh`"
+echo "[*] Done. Restart your terminal or run: `exec zsh`"
