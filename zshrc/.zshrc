@@ -29,11 +29,12 @@ source ~/.zinit/bin/zinit.zsh
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
-zinit light joshskidmore/zsh-fzf-history-search
-zinit light Aloxaf/fzf-tab
 
 # --- Completion System ---
 autoload -Uz compinit && compinit -d ~/.zcompdump
+
+zinit light joshskidmore/zsh-fzf-history-search
+zinit light Aloxaf/fzf-tab
 
 # --- Completion Styles & FZF-Tab ---
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
