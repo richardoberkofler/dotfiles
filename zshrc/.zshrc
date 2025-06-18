@@ -13,6 +13,8 @@ setopt appendhistory sharehistory
 setopt hist_ignore_space hist_ignore_all_dups hist_save_no_dups hist_ignore_dups hist_find_no_dups
 
 # --- Key Bindings ---
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
 bindkey '^p' history-search-backward
