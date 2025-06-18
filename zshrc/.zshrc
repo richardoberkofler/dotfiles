@@ -110,3 +110,5 @@ auto_venv_activate
 
 # --- Custom Environment ---
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
+
+if [ -e /home/richard/.nix-profile/etc/profile.d/nix.sh ]; then . /home/richard/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

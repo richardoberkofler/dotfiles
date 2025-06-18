@@ -21,6 +21,11 @@ if ! command -v yay &>/dev/null; then
   (cd /tmp/yay && makepkg -si --noconfirm)
 fi
 
+if ! command -v nix &>/dev/null; then
+  echo "Installing nix..."
+  sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --no-daemon
+fi
+
 if grep -qEi "(Microsoft|WSL)" /proc/version >/dev/null 2>&1; then
     export DISPLAY=:0
 fi
