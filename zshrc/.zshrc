@@ -26,15 +26,16 @@ fi
 source ~/.zinit/bin/zinit.zsh
 
 # --- Plugins (lazy load where possible) ---
-zinit light zdharma-continuum/fast-syntax-highlighting
+zinit wait lucid for zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
 # --- Completion System ---
 autoload -Uz compinit && compinit -d ~/.zcompdump
 
-zinit light joshskidmore/zsh-fzf-history-search
-zinit light Aloxaf/fzf-tab
+zinit wait lucid for \
+  joshskidmore/zsh-fzf-history-search \
+  Aloxaf/fzf-tab
 
 # --- Completion Styles & FZF-Tab ---
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -49,13 +50,16 @@ zstyle ':fzf-tab:*' use-fzf-default-opts yes
 zstyle ':fzf-tab:*' switch-group '<' '>'
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 
-if command -v eza &>/dev/null; then
-  zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always ${realpath}'
-elif command -v exa &>/dev/null; then
-  zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always ${realpath}'
-else
-  zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color=always -1 ${realpath}'
-fi
+function _fzf_tab_cd_preview() {
+  if command -v eza &>/dev/null; then
+    echo 'eza -1 --color=always ${realpath}'
+  elif command -v exa &>/dev/null; then
+    echo 'exa -1 --color=always ${realpath}'
+  else
+    echo 'ls --color=always -1 ${realpath}'
+  fi
+}
+zstyle ':fzf-tab:complete:cd:*' fzf-preview "$(_fzf_tab_cd_preview)"
 
 # --- Better History Search (arrow keys) ---
 # Credits: https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
@@ -86,9 +90,13 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh --cmd cd)"
 
 # --- Atuin (better shell history) ---
-if command -v atuin &>/dev/null; then
-  eval "$(atuin init zsh)"
-fi
+function _atuin_precmd() {
+  if command -v atuin &>/dev/null; then
+    eval "$(atuin init zsh)"
+    unset -f _atuin_precmd
+  fi
+}
+precmd_functions+=(_atuin_precmd)
 
 # --- Python venv auto-activation ---
 function auto_venv_activate() {
