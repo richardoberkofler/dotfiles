@@ -59,6 +59,7 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
+format = 'in [$path]($style)[$read_only]($read_only_style) '
 
 [docker_context]
 symbol = " "
