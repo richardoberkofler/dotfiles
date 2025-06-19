@@ -10,6 +10,12 @@ Install sudo, git & openssh
 pacman -Sy --noconfirm sudo git openssh
 ```
 
+### Ubuntu
+
+```bash
+sudo apt-get install -y git openssh
+```
+
 ## Install
 
 ```bash

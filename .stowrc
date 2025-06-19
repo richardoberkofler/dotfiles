@@ -1,8 +1,7 @@
 --ignore=.gitignore
 --ignore=README.md
 --ignore=DS_Store
---ignore=setup/arch.sh
---ignore=setup/common.sh
---ignore=setup/ubuntu.sh
 --ignore=install.sh
---ignore=windows_terminal/settings.json
+--ignore=./setup/*
+--ignore=./windows_terminal/*
+--ignore=./tmux/.config/tmux/plugins/*
