@@ -52,8 +52,16 @@ symbol = "  "
 [git_branch]
 symbol = " "
 
+[git_status]
+format = "[$all_status$ahead_behind]($style) "
+
 [git_commit]
 tag_symbol = '  '
+
+[git_metrics]
+added_style = 'bold green'
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+disabled = false
 
 [golang]
 symbol = " "
@@ -105,6 +113,7 @@ symbol = " "
 
 [os]
 disabled = false
+style = "bold white"
 format = "[$symbol]($style) "
 
 [os.symbols]
