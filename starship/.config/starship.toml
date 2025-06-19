@@ -1,3 +1,32 @@
+format = "$os$username$sudo$all$fill$time$line_break$character"
+
+[sudo]
+style = 'bold green'
+symbol = '👩‍💻 '
+disabled = false
+
+[character]
+success_symbol = '[✓](bold green)'
+error_symbol ="[✕](bold red)"
+format = "$symbol ➜(bold) "
+
+[username]
+show_always = true
+style_root = 'bold red'
+style_user = 'bold yellow'
+format = '[$user]($style) '
+
+[fill]
+symbol = " "
+
+[time]
+disabled = false
+format = '🕙 $time($style) '
+time_format = "%H:%M"
+
+[line_break]
+disabled = false
+
 [aws]
 symbol = "  "
 
@@ -114,7 +143,7 @@ symbol = " "
 [os]
 disabled = false
 style = "bold white"
-format = "[$symbol]($style) "
+format = "[$symbol]($style)"
 
 [os.symbols]
 Alpaquita = " "
