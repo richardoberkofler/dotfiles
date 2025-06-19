@@ -1,0 +1,278 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab"
+            },
+            "id": "User.newTab.5DEADB41"
+        },
+        {
+            "command": 
+            {
+                "action": "adjustOpacity",
+                "opacity": 5,
+                "relative": true
+            },
+            "id": "User.adjustOpacity.4C657714"
+        },
+        {
+            "command": 
+            {
+                "action": "adjustOpacity",
+                "opacity": -5,
+                "relative": true
+            },
+            "id": "User.adjustOpacity.4C657713"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "toggleFocusMode",
+            "id": "User.toggleFocusMode"
+        },
+        {
+            "command": 
+            {
+                "action": "commandPalette"
+            },
+            "id": "User.commandPalette.D3F0B923"
+        },
+        {
+            "command": "toggleAlwaysOnTop",
+            "id": "User.toggleAlwaysOnTop"
+        },
+        {
+            "command": "closePane",
+            "id": "User.closePane"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "forward"
+            },
+            "id": "User.moveTab.793E2350"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane"
+            },
+            "id": "User.splitPane.91AB55B1"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
+            "command": 
+            {
+                "action": "openSettings",
+                "target": "settingsUI"
+            },
+            "id": "User.openSettings.6CD791B"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "backward"
+            },
+            "id": "User.moveTab.EF07D31B"
+        },
+        {
+            "command": "toggleSplitOrientation",
+            "id": "User.toggleSplitOrientation"
+        }
+    ],
+    "alwaysShowNotificationIcon": false,
+    "centerOnLaunch": true,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{485748ae-00a6-523d-b2b4-468aadd500d3}",
+    "initialCols": 150,
+    "initialRows": 40,
+    "keybindings": 
+    [
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "User.commandPalette.D3F0B923",
+            "keys": "ctrl+shift+p"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.adjustOpacity.4C657713",
+            "keys": "ctrl+pgdn"
+        },
+        {
+            "id": "User.adjustOpacity.4C657714",
+            "keys": "ctrl+pgup"
+        },
+        {
+            "id": "User.splitPane.91AB55B1",
+            "keys": "ctrl+shift+minus"
+        },
+        {
+            "id": "User.toggleAlwaysOnTop",
+            "keys": "alt+shift+f11"
+        },
+        {
+            "id": "User.toggleFocusMode",
+            "keys": "shift+f11"
+        },
+        {
+            "id": "User.toggleSplitOrientation",
+            "keys": "ctrl+shift+<"
+        },
+        {
+            "id": "User.closePane",
+            "keys": "ctrl+w"
+        },
+        {
+            "id": "User.openSettings.6CD791B",
+            "keys": "ctrl+shift+comma"
+        },
+        {
+            "id": "User.moveTab.EF07D31B",
+            "keys": "ctrl+shift+pgdn"
+        },
+        {
+            "id": "User.moveTab.793E2350",
+            "keys": "ctrl+shift+pgup"
+        }
+    ],
+    "language": "en-US",
+    "launchMode": "focus",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "backgroundImage": null,
+            "colorScheme": "One Half Dark",
+            "cursorShape": "filledBox",
+            "font": 
+            {
+                "face": "JetBrainsMono Nerd Font Mono",
+                "size": 12
+            },
+            "opacity": 95,
+            "padding": "10",
+            "scrollbarState": "hidden",
+            "useAcrylic": false
+        },
+        "list": 
+        [
+            {
+                "guid": "{485748ae-00a6-523d-b2b4-468aadd500d3}",
+                "hidden": false,
+                "name": "Arch Linux",
+                "source": "Microsoft.WSL",
+                "tabColor": "#1793D1",
+                "tabTitle": "Arch Linux",
+                "environment": {}
+            },
+            {
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
+                "guid": "{c79db05d-2948-4a3a-ac35-67b91885b593}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/pwsh.png",
+                "name": "PowerShell",
+                "startingDirectory": "%USERPROFILE%",
+                "tabColor": "#012456",
+                "tabTitle": "PowerShell",
+                "environment": {}
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl",
+                "tabColor": "#D70A53",
+                "tabTitle": "Debian",
+                "environment": {}
+            },
+            {
+                "guid": "{6bf90f68-6444-54c8-b15f-bdea0d15dd9e}",
+                "hidden": false,
+                "name": "Podman",
+                "source": "Windows.Terminal.Wsl",
+                "tabColor": "#00BFFF",
+                "tabTitle": "Podman",
+                "environment": {}
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#343434",
+            "black": "#282C34",
+            "blue": "#61AFEF",
+            "brightBlack": "#5A6374",
+            "brightBlue": "#61AFEF",
+            "brightCyan": "#56B6C2",
+            "brightGreen": "#98C379",
+            "brightPurple": "#C678DD",
+            "brightRed": "#E06C75",
+            "brightWhite": "#DCDFE4",
+            "brightYellow": "#E5C07B",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#56B6C2",
+            "foreground": "#DCDFE4",
+            "green": "#98C379",
+            "name": "One Half Dark (BG adjusted)",
+            "purple": "#C678DD",
+            "red": "#E06C75",
+            "selectionBackground": "#FFFFFF",
+            "white": "#DCDFE4",
+            "yellow": "#E5C07B"
+        }
+    ],
+    "tabWidthMode": "equal",
+    "theme": "dark",
+    "themes": [],
+    "useAcrylicInTabRow": true
+}

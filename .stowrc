@@ -5,3 +5,4 @@
 --ignore=setup/common.sh
 --ignore=setup/ubuntu.sh
 --ignore=install.sh
+--ignore=windows_terminal/settings.json
