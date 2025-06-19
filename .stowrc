@@ -1,4 +1,5 @@
---ignore=.stowrc
+--ignore=.gitignore
+--ignore=README.md
 --ignore=DS_Store
 --ignore=setup/arch.sh
 --ignore=setup/common.sh
