@@ -22,7 +22,7 @@ symbol = " "
 [time]
 disabled = false
 format = '🕙 $time($style) '
-time_format = "%H:%M"
+time_format = "%A %H:%M"
 
 [line_break]
 disabled = false
