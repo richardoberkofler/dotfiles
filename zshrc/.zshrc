@@ -75,7 +75,7 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 # --- Aliases ---
 alias cls='clear'
 alias ll='eza -l -g --icons --git'
-alias llt='eza -1 --icons --tree --git-ignore'
+alias llt='eza -1 --icons --tree --git-ignore --group-directories-first'
 alias rg='ripgrep'
 alias ssh='ssh.exe'
 alias ssh-add='ssh-add.exe'
