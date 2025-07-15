@@ -1,0 +1,135 @@
+{
+  // ===================== Theme setttings ====================
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "workbench.colorCustomizations": {
+    "[Atom One Dark]": {
+      "sideBar.background": "#282c34"
+    }
+  },
+
+  // ==================== SideBar setttings ===================
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+
+  "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 10,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": false,
+  "git.decorations.enabled": false,
+
+  // ================== Status Bar setttings ==================
+  "workbench.statusBar.visible": true,
+
+
+  // ==================== Editor setttings ====================
+  "workbench.editor.showTabs": "multiple",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "window.zoomLevel": 0,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "line",
+  "editor.stickyScroll.enabled": false,
+  "editor.codeLens": false,
+  "editor.matchBrackets": "never",
+  "editor.hover.enabled": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "scm.diffDecorations": "all",
+  "editor.lineNumbers": "relative",
+  "editor.showFoldingControls": "never",
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "selection",
+  "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": "off",
+  "editor.selectionHighlight": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+  "emmet.triggerExpansionOnTab": true,
+  "files.autoSave": "afterDelay",
+  "editor.tabSize": 2,
+
+  // ================== Recommendations setttings ===================
+  "extensions.ignoreRecommendations": true,
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false
+  },
+  "editor.unicodeHighlight.invisibleCharacters": false,
+
+  "files.exclude": {
+    "**/.git": false
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "projectManager.git.baseFolders": [
+    "C:\\Users\\Admin\\repos",
+    "D:\\01_Privat\\04_Projekte\\01_Coding"
+  ],
+  "projectManager.tags": ["personal", "work", "apps", "database"],
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "python.defaultInterpreterPath": "C:\\Users\\u19n38\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
+  },
+  "sqliteViewer.maxFileSize": 4000,
+  "cSpell.maxDuplicateProblems": 3,
+  "cSpell.userWords": ["iterrows", "notna", "Oberkofler", "sqlmodel"],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "remote.SSH.remotePlatform": {
+    "192.168.110.50": "linux",
+    "192.168.110.51": "linux",
+    "10.1.2.31": "linux",
+    "10.1.2.11": "linux",
+    "10.1.1.11": "linux"
+  },
+  "hediet.vscode-drawio.resizeImages": null,
+  "remote.autoForwardPortsSource": "hybrid",
+  "gitlens.graph.minimap.additionalTypes": ["localBranches", "stashes", "tags"],
+  "chat.commandCenter.enabled": false,
+  "github.copilot.selectedCompletionModel": "",
+  "testExplorer.useNativeTesting": true,
+
+  "git.ignoreMissingGitWarning": true,
+  "jupyter.askForKernelRestart": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.chat.terminalChatLocation": "terminal",
+  "github.copilot.nextEditSuggestions.enabled": true
+}
