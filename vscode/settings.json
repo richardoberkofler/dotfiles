@@ -90,6 +90,8 @@
   "python.analysis.typeCheckingMode": "standard",
   "python.defaultInterpreterPath": "C:\\Users\\u19n38\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
 
+  "jupyter.askForKernelRestart": false,
+
   // ===================== Terminal =====================
   "terminal.integrated.defaultProfile.windows": "PowerShell",
 
@@ -101,6 +103,17 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.ignoreMissingGitWarning": true,
+
+  // ===================== Copilot & AI =====================
+  "github.copilot.selectedCompletionModel": "",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.chat.terminalChatLocation": "terminal",
+  "github.copilot.nextEditSuggestions.enabled": true,
 
   // ===================== Miscellaneous =====================
   "workbench.editorAssociations": {
@@ -120,16 +133,6 @@
   "remote.autoForwardPortsSource": "hybrid",
   "gitlens.graph.minimap.additionalTypes": ["localBranches", "stashes", "tags"],
   "chat.commandCenter.enabled": false,
-  "github.copilot.selectedCompletionModel": "",
   "testExplorer.useNativeTesting": true,
 
-  "jupyter.askForKernelRestart": false,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "github.copilot.chat.terminalChatLocation": "terminal",
-  "github.copilot.nextEditSuggestions.enabled": true
 }
