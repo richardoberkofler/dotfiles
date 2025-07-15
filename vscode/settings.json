@@ -9,7 +9,6 @@
   },
   "workbench.activityBar.location": "top",
   "workbench.sideBar.location": "right",
-
   "workbench.statusBar.visible": true,
   "workbench.editor.showTabs": "multiple",
   "workbench.startupEditor": "none",
@@ -97,6 +96,8 @@
 
   // ===================== Extensions & Recommendations =====================
   "extensions.ignoreRecommendations": true,
+  "projectManager.git.baseFolders": ["~/repos/"],
+  "projectManager.tags": ["personal", "work"],
 
   // ===================== Git =====================
   "git.autofetch": true,
