@@ -1,4 +1,4 @@
-format = "$os$username$sudo$all$fill$time$line_break$character"
+format = "$os$username$sudo$all$fill$line_break$character"
 
 [sudo]
 style = 'bold green'
@@ -18,11 +18,6 @@ format = '[$user]($style) '
 
 [fill]
 symbol = " "
-
-[time]
-disabled = false
-format = '🕙 $time($style) '
-time_format = "%A %H:%M"
 
 [line_break]
 disabled = false
