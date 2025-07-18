@@ -16,7 +16,7 @@
   "window.zoomLevel": 0,
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.tree.indent": 10,
+  "workbench.tree.indent": 16,
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
@@ -35,7 +35,7 @@
   "editor.codeLens": false,
   "editor.matchBrackets": "never",
   "editor.hover.enabled": true,
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "on",
   "editor.showFoldingControls": "never",
   "editor.guides.indentation": false,
   "editor.renderWhitespace": "selection",
@@ -134,6 +134,5 @@
   "remote.autoForwardPortsSource": "hybrid",
   "gitlens.graph.minimap.additionalTypes": ["localBranches", "stashes", "tags"],
   "chat.commandCenter.enabled": false,
-  "testExplorer.useNativeTesting": true,
-
+  "testExplorer.useNativeTesting": true
 }
