@@ -85,6 +85,7 @@ alias winget='winget.exe'
 alias cda='zoxide add'
 alias cdq='zoxide query'
 alias cdr='zoxide remove'
+alias gitlab-runner='gitlab-runner.exe'
 
 # --- Starship Prompt ---
 eval "$(starship init zsh)"
