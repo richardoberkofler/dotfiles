@@ -15,7 +15,7 @@ fi
 
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y git zsh tmux curl unzip build-essential fzf eza zoxide neovim htop ripgrep neofetch
+sudo apt-get install -y git zsh tmux curl unzip build-essential fzf eza zoxide neovim htop ripgrep neofetch stow lazygit cloc
 
 # Install starship
 if ! command -v starship &>/dev/null; then
