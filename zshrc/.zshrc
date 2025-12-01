@@ -86,6 +86,8 @@ alias cda='zoxide add'
 alias cdq='zoxide query'
 alias cdr='zoxide remove'
 alias gitlab-runner='gitlab-runner.exe'
+export PATH="$PATH:/home/richard/.dotnet/tools"
+export PATH="$PATH:/usr/local/texlive/2025/bin/x86_64-linux"
 
 # --- Starship Prompt ---
 eval "$(starship init zsh)"
