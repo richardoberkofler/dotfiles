@@ -13,13 +13,16 @@ else
   sudo localectl set-locale LANG=de_AT.UTF-8
 fi
 
-sudo pacman -Syu --noconfirm git zsh tmux curl unzip base-devel fzf eza lazygit starship zoxide neovim htop ripgrep atuin jq playerctl cloc
+sudo pacman -Syu --noconfirm git zsh tmux curl unzip base-devel fzf eza lazygit starship zoxide neovim htop ripgrep atuin jq playerctl cloc python-pip python-setuptools python-wheel python-build
 
 if ! command -v yay &>/dev/null; then
   echo "Installing yay (AUR helper)..."
   git clone https://aur.archlinux.org/yay.git /tmp/yay
   (cd /tmp/yay && makepkg -si --noconfirm)
 fi
+
+yay -Sy --noconfirm python-pipx
+python -m pipx ensurepath
 
 if ! command -v nix &>/dev/null; then
   echo "Installing nix..."
